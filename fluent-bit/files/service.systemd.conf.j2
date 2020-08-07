@@ -6,8 +6,7 @@ After=network.target
 
 [Service]
 Type=simple
-
-ExecStart=/opt/td-agent-bit/bin/{{ bit.pkg }} -c /opt/td-agent-bit/{{ bit.pkg }}/{{ bit.pkg }}.conf -R /opt/td-agent-bit/{{ bit.pkg }}/parsers.conf
+ExecStart=/opt/{{ bit.pkg }}/bin/{{ bit.pkg }} -c /opt/{{ bit.pkg }}/{{ bit.pkg }}.conf -R /opt/{{ bit.pkg }}/parsers.conf
 Restart=always
 
 [Install]
