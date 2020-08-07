@@ -2,10 +2,10 @@
 # vim: ft=yaml
 
 fluent_bit:
-  pkg: fluent-bit
+  pkg: td-agent-bit
   service:
-    unit: '/lib/systemd/system/fluent-bit.service'
-    conf: '/etc/td-agent-bit/fluent-bit.conf'
+    unit: '/etc/systemd/system/td-agent-bit.service'
+    conf: '/etc/td-agent-bit/td-agent-bit.conf'
   config:
     flush: 5
     daemon: 'Off'
